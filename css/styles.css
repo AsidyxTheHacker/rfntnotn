@@ -8,15 +8,12 @@ body {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-flow: wrap;
-    overflow: hidden;
-    width: 100%;
-    color:white;
-    background-image: linear-gradient(rgb(32, 41, 97), rgb(17, 21, 50));
-    box-shadow: 0 5px 3px black;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    overflow-wrap: anywhere;
+    background-image: linear-gradient(rgb(97, 32, 32), rgb(50, 17, 17));
+    box-shadow: 5px 0px 5px black;
+    width:18vw;
+    min-height: 100vh;
 }
 
 .rfntnotn {
@@ -26,26 +23,32 @@ body {
 }
 
 .pages {
+    margin-top: 60px;
     font-size: 24px;
     display: flex;
-    gap:25px;
+    gap:40px;
+    flex-direction: column;
 }
 
 .headtab {
+    display: block;
+    text-decoration:none;
     color:white;
     background-color: transparent;
     border: solid 0;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
-    border: solid white 3px;
+    border: solid white 2px;
     border-radius: 10px;
-    padding:10px;
+    padding: 6px;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    width:100%;
 }
 
 .headtab:hover {
     transform: scale(1.11);
+    box-shadow: rgb(181, 181, 181) 0 4px 0;
 }
 
 li {
@@ -54,4 +57,13 @@ li {
 
 a:visited {
     color:white;
+}
+
+.header img {
+    width:100%;
+}
+
+.logo {
+    margin-top: 15px;
+    width:450px;
 }
