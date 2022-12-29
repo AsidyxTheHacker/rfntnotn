@@ -9,6 +9,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-flow: wrap;
+    overflow: hidden;
+    width: 100%;
     color:white;
     background-image: linear-gradient(rgb(32, 41, 97), rgb(17, 21, 50));
     box-shadow: 0 5px 3px black;
@@ -23,9 +26,9 @@ body {
 }
 
 .pages {
-    font-size: 24px;
     display: flex;
-    gap:30px;
+    font-size: 24px;
+    gap:25px;
 }
 
 .title {
@@ -53,7 +56,6 @@ body {
     justify-content: center;
     flex-flow: wrap;
     gap: 20px;
-    list-style-type: none;
 }
 
 .top-tier {
@@ -63,13 +65,10 @@ body {
     color: white;
     margin-bottom: 20px;
     border: solid rgb(219, 219, 219) 3px;
-    list-style-type: none;
     min-width: 400px;
     min-height: 75px;
     font-style: italic;
     text-shadow: 2px 4px 3px black;
-    background-color: rgb(221, 46, 46);
-    box-shadow: 7px 7px 0px rgb(118, 26, 26);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
@@ -79,8 +78,24 @@ body {
     font-weight: bold;
 }
 
-li {
-    list-style-type: none;
+.headtab {
+    color:white;
+    background-color: transparent;
+    border: solid 0;
+    font-size: 24px;
+    font-weight: bold;
+    border: solid white 3px;
+    border-radius: 10px;
+    padding:10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.headtab:hover {
+    /* border: rgb(153, 153, 153) solid 0;
+    border-radius: 8px;
+    opacity: .05; */
+    transform: scale(1.11);
 }
 
 a:visited {
