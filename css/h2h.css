@@ -1,20 +1,12 @@
 body {
-    margin:0;
-    background-image: radial-gradient(rgb(34, 34, 34), rgb(13, 13, 13));
+    margin: 0;
+    background-image: url(../imgs/background.png);
     background-attachment: fixed;
     height: 100%;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+.entire-page {
+    display: flex;
 }
 
 .header {
@@ -28,10 +20,13 @@ body {
     min-height: 100vh;
 }
 
-.rfntnotn {
-    text-align: center;
-    font-size: 64px;
-    margin:12px;
+.header img {
+    width:100%;
+}
+
+.logo {
+    margin-top: 15px;
+    width:450px;
 }
 
 .pages {
@@ -62,24 +57,10 @@ body {
     background-color: rgba(184, 184, 184, 0.075);
 }
 
-li {
-    list-style-type: none;
-}
-
 a:visited {
     color:white;
-}
-
-.header img {
-    width:100%;
-}
-
-.logo {
-    margin-top: 15px;
-    width:450px;
 }
 
 button a {
     display: block;
 }
-
