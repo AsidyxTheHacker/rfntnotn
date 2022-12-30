@@ -3,6 +3,18 @@ body {
     background-image: radial-gradient(rgb(34, 34, 34), rgb(13, 13, 13));
     background-attachment: fixed;
     height: 100%;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 .header {
@@ -35,10 +47,9 @@ body {
     color:white;
     background-color: transparent;
     border: solid 0;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    border: solid white 2px;
-    border-radius: 10px;
+    border: solid black 3px;
     padding: 6px;
     cursor: pointer;
     transition: all .2s ease-in-out;
@@ -47,7 +58,8 @@ body {
 
 .headtab:hover {
     transform: scale(1.11);
-    box-shadow: rgb(181, 181, 181) 0 6px 0;
+    box-shadow: black 6px 6px 0;
+    background-color: rgba(184, 184, 184, 0.075);
 }
 
 li {
@@ -70,3 +82,4 @@ a:visited {
 button a {
     display: block;
 }
+
