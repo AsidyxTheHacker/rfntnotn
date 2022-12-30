@@ -5,12 +5,24 @@ body {
     height: 100%;
 }
 
+.entire-page {
+    display: flex;
+}
+
+.tier-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+}
+
 .header {
     display: flex;
     align-items: center;
     flex-direction: column;
     overflow-wrap: anywhere;
-    background-image: linear-gradient(rgb(97, 32, 32), rgb(50, 17, 17));
+    background-image: linear-gradient(rgb(95, 32, 32), rgb(37, 13, 13));
     box-shadow: 5px 0px 5px black;
     width:18vw;
     min-height: 100vh;
@@ -44,11 +56,15 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+    border: solid white 5px;
+    padding:15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 88px;
-    margin:30px;
+    margin:20px;
+    margin-top: 0;
+    margin-left:55px;
 }
 
 .column {
@@ -63,18 +79,22 @@ body {
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
-    gap: 20px;
+    gap: 25px;
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
 .top-tier {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: white;
     margin-bottom: 20px;
     border: solid rgb(219, 219, 219) 3px;
-    min-width: 250px;
+    min-width: 320px;
+    max-width: 320px;
     min-height: 75px;
+    max-height: 75px;
     font-style: italic;
     text-shadow: 2px 4px 3px black;
     padding-left: 20px;
@@ -87,7 +107,6 @@ body {
 }
 
 .headtab {
-    display: block;
     text-decoration:none;
     color:white;
     background-color: transparent;
@@ -103,13 +122,23 @@ body {
 }
 
 .headtab:hover {
-    /* border: rgb(153, 153, 153) solid 0;
-    border-radius: 8px;
-    opacity: .05; */
     transform: scale(1.11);
-    box-shadow: rgb(181, 181, 181) 0 4px 0;
+    box-shadow: rgb(181, 181, 181) 0 6px 0;
+}
+
+.char {
+    overflow: hidden;
+    width: 318px;
+    height: 105px;
+    position: absolute;
+    object-fit: none;
+    object-position: 182px -6px;
 }
 
 a:visited {
     color:white;
+}
+
+button a {
+    display: block;
 }

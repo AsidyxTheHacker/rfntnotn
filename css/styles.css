@@ -10,7 +10,7 @@ body {
     align-items: center;
     flex-direction: column;
     overflow-wrap: anywhere;
-    background-image: linear-gradient(rgb(97, 32, 32), rgb(50, 17, 17));
+    background-image: linear-gradient(rgb(95, 32, 32), rgb(37, 13, 13));
     box-shadow: 5px 0px 5px black;
     width:18vw;
     min-height: 100vh;
@@ -31,7 +31,6 @@ body {
 }
 
 .headtab {
-    display: block;
     text-decoration:none;
     color:white;
     background-color: transparent;
@@ -48,7 +47,7 @@ body {
 
 .headtab:hover {
     transform: scale(1.11);
-    box-shadow: rgb(181, 181, 181) 0 4px 0;
+    box-shadow: rgb(181, 181, 181) 0 6px 0;
 }
 
 li {
@@ -66,4 +65,8 @@ a:visited {
 .logo {
     margin-top: 15px;
     width:450px;
+}
+
+button a {
+    display: block;
 }
