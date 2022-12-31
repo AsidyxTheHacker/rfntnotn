@@ -104,9 +104,51 @@ button a {
     justify-content: space-around;
     flex-direction: column;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+table {
+    background-color: rgba(190, 190, 190, 0.252);
+    border: rgba(150, 150, 150, 0.252) solid 10px;
+    border-radius: 5px;
+}
+
+th, td, tr {
+    background-color: white;
+    text-align: center;
+    border: solid black 2px;
+    font-weight: bold;
+}
+
+.blank {
+    background-color: black;
+}
+
+.stocks {
+    background-color: cornflowerblue;
+    box-shadow: black inset 0 0 2px;
+}
+
+th {
+    width: 40px;
+}
+
+td {
+    width: 40px;
+    height: 25px;
+}
+
+.record {
+    font-size: 16px;
+    transition: all .2s ease-in-out;
+    font-style: italic;
+}
+
+.record:hover {
+    transform: scale(1.06);
 }
 
 @keyframes fadeInAnimation {
