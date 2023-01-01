@@ -117,7 +117,7 @@ table {
 }
 
 th, td, tr {
-    background-color: white;
+    background-color: rgb(146, 146, 146);
     text-align: center;
     border: solid black 2px;
     font-weight: bold;
@@ -130,14 +130,15 @@ th, td, tr {
 .stocks {
     background-color: cornflowerblue;
     box-shadow: black inset 0 0 2px;
+    padding-top:2px
 }
 
 th {
-    width: 40px;
+    width: 42px;
 }
 
 td {
-    width: 40px;
+    width: 42px;
     height: 25px;
 }
 
@@ -148,7 +149,8 @@ td {
 }
 
 .record:hover {
-    transform: scale(1.06);
+    transform: scale(1.07);
+    background-color: white;
 }
 
 @keyframes fadeInAnimation {
