@@ -11,6 +11,17 @@ const container = document.getElementById("container");
         };
       }
 
+      function nameTags(rows, cols) {
+        container.style.setProperty('--slot-rows', rows);
+        container.style.setProperty('--slot-cols', cols);
+        for (s = 0; s < (rows * cols); s++) {
+          let slot = document.createElement("div");
+          // cell.innerText = (c + 1);
+          slot.id = "name-" + s;
+          container.appendChild(slot).className = "nametag";
+        };
+      }
+
       makeSlots(4, 7)
 
       function sprite(name, slot) {
@@ -21,7 +32,7 @@ const container = document.getElementById("container");
         src1.appendChild(img);
       }
 
-      sprite('Luigi', 0)
+      sprite('Luigi', 0, 0)
       sprite('Ganon', 1)
       sprite('Dr_Mario', 2)
       sprite('Link', 3)
