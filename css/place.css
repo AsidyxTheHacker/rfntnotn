@@ -93,13 +93,12 @@ button a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 88px;
-    margin:20px;
-    margin-top: 0;
+    font-size: 82px;
+    margin:10px;
     margin-left:23px;
 }
 
-.h2h {
+.place-table {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -111,49 +110,6 @@ button a {
     animation-fill-mode: forwards;
 }
 
-table {
-    background-color: rgba(190, 190, 190, 0.252);
-    border: rgba(150, 150, 150, 0.252) solid 10px;
-    border-radius: 5px;
-}
-
-th, td, tr {
-    background-color: rgb(146, 146, 146);
-    text-align: center;
-    border: solid black 2px;
-    font-weight: bold;
-}
-
-.blank {
-    background-color: black;
-}
-
-.stocks {
-    background-color: cornflowerblue;
-    box-shadow: black inset 0 0 2px;
-    padding-top:2px
-}
-
-th {
-    width: 42px;
-}
-
-td {
-    width: 42px;
-    height: 25px;
-}
-
-.record {
-    font-size: 16px;
-    transition: all .2s ease-in-out;
-    font-style: italic;
-}
-
-.record:hover {
-    transform: scale(1.07);
-    background-color: white;
-}
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -161,4 +117,37 @@ td {
     100% {
         opacity: 1;
      }
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    grid-gap: 2px;
+    grid-template-rows: repeat(var(--slot-rows), 300px);
+    grid-template-columns: repeat(var(--slot-cols), 215px);
+  }
+
+.slot-char {
+    display: flex;
+    gap:10px;
+    background-image: linear-gradient(rgb(73, 73, 73),rgb(32, 32, 32));
+    width: 190px;
+    height: 275px;
+    border:white inset 5px;
+    box-shadow: black 0 3px 5px inset;
+    transition: all .2s ease-in-out;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
+.char-sprite {
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+
+.char-sprite:hover {
+    transform: scale(1.1);
 }
