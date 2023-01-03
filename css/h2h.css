@@ -81,6 +81,10 @@ button a {
     display: block;
 }
 
+a:link {
+    color: white;
+}
+
 .title {
     display: flex;
     align-items: center;
