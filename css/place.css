@@ -73,15 +73,11 @@ body {
     border-radius: 6px;
 }
 
-a:visited {
-    color:white;
-}
-
 button a {
     display: block;
 }
 
-a:link {
+a:link, a:visited {
     color: white;
 }
 

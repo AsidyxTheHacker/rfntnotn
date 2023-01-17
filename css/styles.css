@@ -57,7 +57,7 @@ body {
     width:100%;
 }
 
-a:link {
+a:link, a:visited {
     color: white;
 }
 
@@ -71,10 +71,6 @@ a:link {
 
 li {
     list-style-type: none;
-}
-
-a:visited {
-    color:white;
 }
 
 .header img {
