@@ -6,6 +6,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.entire-page {
+    display: flex;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -26,4 +30,75 @@ body {
     margin-top: 15px;
     width:450px;
     animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+       transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(-90deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+.pages {
+    margin-top: 60px;
+    font-size: 24px;
+    display: flex;
+    gap:40px;
+    flex-direction: column;
+}
+
+.headtab {
+    text-decoration:none;
+    color:white;
+    background-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+    border: solid black 4px;
+    box-shadow: -6px -6px 0 black;
+    padding: 6px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    width:100%;
+}
+
+.headtab:hover {
+    transform: scale(1.11);
+    box-shadow: black 6px 6px 0;
+    text-shadow: rgb(120, 120, 120) 0 3px;
+    background-color: rgba(184, 184, 184, 0.075);
+    border-radius: 6px;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+button a {
+    display: block;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: solid white 5px;
+    box-shadow: black 0 0 10px;
+    text-shadow: black 0 0 10px;
+    padding:15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 88px;
+    margin:20px;
+    margin-top: 0;
+    margin-left:23px;
+}
+
+iframe {
+    margin:auto;
 }
