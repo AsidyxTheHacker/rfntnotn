@@ -105,7 +105,6 @@ button a {
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin:auto;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -121,7 +120,6 @@ button a {
 }
 
 iframe {
-    margin:auto;
     border: solid white 5px;
     box-shadow: black 0 6px 6px;
 }
