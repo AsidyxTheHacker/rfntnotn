@@ -27,7 +27,6 @@ body {
 
 .logo {
     margin-top: 15px;
-    width:450px;
     animation: animate 4s linear infinite;
 }
 
