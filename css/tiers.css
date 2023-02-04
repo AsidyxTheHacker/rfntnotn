@@ -87,43 +87,29 @@ body {
     margin-left:23px;
 }
 
-.column {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-flow: wrap;
-}
-
 .tiers {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
-    gap: 25px;
+    gap: 22px;
     margin-top:20px;
-    margin-bottom:20px;
     padding-left: 5px;
 }
 
 .top-tier {
     display: flex;
     align-items: center;
-    justify-content: left;
-    gap:6px;
+    gap:4px;
     color: white;
     margin-bottom: 20px;
     border: solid rgb(219, 219, 219) 3px;
-    min-width: 320px;
-    max-width: 320px;
-    min-height: 75px;
-    max-height: 75px;
-    font-style: italic;
+    border-radius: 4px;
+    min-width: 334px;
+    min-height: 85px;
     text-shadow: 2px 3px 2px black;
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 32px;
+    padding: 15px 20px 15px 10px;
+    font-size: 30px;
     font-weight:bold;
     text-decoration: underline;
     transition: all .2s ease-in-out;
@@ -161,14 +147,45 @@ a:link, a:visited {
 
 .char {
     overflow: hidden;
-    width: 309px;
-    height: 87px;
+    width: 310px;
+    height: 89px;
     position: absolute;
     object-fit: none;
-    object-position: 183px -8px;
-    scale: 1.2;
+    object-position: 177px -8px;
+    scale: 1.29;
+    transition: all .2s ease-in-out;
 }
 
 button a {
     display: block;
+}
+
+#tier-1, #tier-2, #tier-3, #tier-4, #tier-5 {
+    background-color: rgb(221, 46, 46);
+    box-shadow: 6px 6px 0px rgb(118, 26, 26);
+}
+
+#tier-6, #tier-7, #tier-8, #tier-9, #tier-10 {
+    background-color: rgb(240, 151, 50);
+    box-shadow: 6px 6px 0px rgb(141, 90, 32);
+}
+
+#tier-11, #tier-12, #tier-13, #tier-14, #tier-15 {
+    background-color: rgb(216, 193, 45);
+    box-shadow: 6px 6px 0px rgb(164, 146, 30);
+}
+
+#tier-16, #tier-17, #tier-18, #tier-19, #tier-20 {
+    background-color: rgb(60, 187, 43);
+    box-shadow: 6px 6px 0px rgb(36, 121, 24);
+}
+
+#tier-21, #tier-22, #tier-23, #tier-24, #tier-25 {
+    background-color: rgb(39, 156, 228);
+    box-shadow: 6px 6px 0px rgb(25, 104, 153);
+}
+
+#tier-26, #tier-27, #tier-28 {
+    background-color: rgb(169, 43, 211);
+    box-shadow: 6px 6px 0px rgb(98, 24, 123);
 }
